@@ -1,4 +1,4 @@
-# Banco de Dados RPG
+# Banco de Dados RPG 🎮
 
 Este repositório é dedicado a um projeto de banco de dados onde estamos criando um jogo RPG.
 
@@ -8,8 +8,8 @@ Este repositório é dedicado a um projeto de banco de dados onde estamos criand
 
 ## Próximos Passos
 
-1. Criar o arquivo SQL para o banco de dados.
-2. Definir as tabelas e relacionamentos.
+1. Criar o arquivo SQL para o banco de dados. ✅
+2. Definir as tabelas e relacionamentos. ✅
 3. Implementar as funcionalidades do jogo.
 
 ## Membros 
