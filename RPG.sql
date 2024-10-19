@@ -71,3 +71,16 @@ create table SkillsdoPersonagem(
     foreign key (IdPersonagem) references Personagem(IdPersonagem),
     foreign key (IdSkill) references Skills(IdSkill)
 )
+
+
+insert into Monstro (NomeMonstro, Nivel, Forca, Defesa, Vida) values
+('Goblin', 1, 5, 2, 10),
+('Orc', 3, 10, 5, 30),
+('Dragão', 10, 50, 30, 100);
+
+
+insert into Skills (NomeSkill, Descricao, Dano, IdPersonagem) values
+('Bola de Fogo', 'Lança uma bola de fogo que causa dano ao inimigo', 20, 1),
+('Corte Duplo', 'Ataque com duas espadas causando dano duplo', 15, 2),
+('Cura', 'Recupera uma quantidade de vida do personagem', 10, 3);
+
