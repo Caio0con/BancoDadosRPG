@@ -73,6 +73,8 @@ create table SkillsdoPersonagem(
 )
 
 
+
+
 insert into Monstro (NomeMonstro, Nivel, Forca, Defesa, Vida) values
 ('Goblin', 1, 5, 2, 10),
 ('Orc', 3, 10, 5, 30),
@@ -84,3 +86,22 @@ insert into Skills (NomeSkill, Descricao, Dano, IdPersonagem) values
 ('Corte Duplo', 'Ataque com duas espadas causando dano duplo', 15, 2),
 ('Cura', 'Recupera uma quantidade de vida do personagem', 10, 3);
 
+insert into TipoEquipamento (NomeTipoEquipamento, Descricao) values
+('Arma', 'Equipamento que aumenta o dano do personagem'),
+('Armadura', 'Equipamento que aumenta a defesa do personagem'),
+('Acessorio', 'Equipamento que aumenta a vida do personagem');
+
+insert into Equipamento (NomeEquipamento, Forca, Defesa, Peso, Descricao, IdTipoEquipamento) values
+('Espada', 10, 0, 5, 'Espada de ferro', 1),
+('Armadura de Couro', 0, 5, 10, 'Armadura de couro', 2),
+('Anel de Vida', 0, 0, 1, 'Anel que aumenta a vida do personagem', 3);
+
+insert InventarioPersonagem (IdPersonagem, IdEquipamento) values
+(1, 1),
+(2, 2),
+(3, 3);
+
+insert ItensDropaveis (IdMonstro, IdEquipamento) values
+(1, 4),
+(2, 5),
+(3, 6);
